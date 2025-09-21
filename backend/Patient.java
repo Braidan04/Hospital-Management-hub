@@ -24,9 +24,9 @@ public class Patient {
             stmt.setInt(2, age);
             stmt.setString(3, gender);
             stmt.executeUpdate();
-            System.out.println("✅ Patient registered successfully!");
+            System.out.println("Patient registered successfully!");
         } catch (SQLException e) {
-            System.out.println("❌ Error: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage());
         }
     }
 }
