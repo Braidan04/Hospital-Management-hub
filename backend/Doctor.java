@@ -34,9 +34,9 @@ public class Doctor {
             stmt.setString(1, name);
             stmt.setString(2, specialty);
             stmt.executeUpdate();
-            System.out.println("✅ Doctor registered successfully!");
+            System.out.println(" Doctor registered successfully!");
         } catch (SQLException e) {
-            System.out.println("❌ Error: " + e.getMessage());
+            System.out.println(" Error: " + e.getMessage());
         }
     }
 }
