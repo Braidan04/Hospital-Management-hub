@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Appointments</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Appointments</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      
+      <a href="patients.html">Patients</a>
+      <a href="doctors.html">Doctors</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="appointmentForm">
+      <h2>Schedule Appointment</h2>
+      <input type="number" id="aPatientId" placeholder="Patient ID" required>
+      <input type="number" id="aDoctorId" placeholder="Doctor ID" required>
+      <input type="date" id="aDate" required>
+      <button type="submit">Schedule</button>
+    </form>
+
+    <h2>Appointments List</h2>
+    <table id="appointmentTable">
+      <thead>
+        <tr>
+          <th>ID</th><th>Patient ID</th><th>Doctor ID</th><th>Date</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

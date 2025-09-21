@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patients</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Patients</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="appointments.html">Appointments</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="patientForm">
+      <h2>Register Patient</h2>
+      <input type="text" id="pName" placeholder="Name" required>
+      <input type="number" id="pAge" placeholder="Age" required>
+      <input type="text" id="pGender" placeholder="Gender" required>
+      <button type="submit">Add Patient</button>
+    </form>
+
+    <h2>Patient List</h2>
+    <table id="patientTable">
+      <thead>
+        <tr>
+          <th>ID</th><th>Name</th><th>Age</th><th>Gender</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
