@@ -18,10 +18,10 @@ public class Database {
                 );
                 System.out.println("DB Connected");
             } catch (ClassNotFoundException e) {
-                System.out.println("❌ MySQL Driver not found!");
+                System.out.println("MySQL Driver not found!");
                 e.printStackTrace();
             } catch (SQLException e) {
-                System.out.println("❌ SQL Error: " + e.getMessage());
+                System.out.println(" SQL Error: " + e.getMessage());
             }
         }
         return conn;
