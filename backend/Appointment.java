@@ -42,9 +42,9 @@ public class Appointment {
             stmt.setInt(2, doctorId);
             stmt.setString(3, date);
             stmt.executeUpdate();
-            System.out.println("✅ Appointment scheduled successfully!");
+            System.out.println(" Appointment scheduled successfully!");
         } catch (SQLException e) {
-            System.out.println("❌ Error: " + e.getMessage());
+            System.out.println(" Error: " + e.getMessage());
         }
     }
 }
